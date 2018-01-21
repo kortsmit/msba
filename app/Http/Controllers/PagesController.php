@@ -2,11 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class PagesController extends Controller
 {
-
     /**
      * Create the home page.
      *
@@ -16,5 +13,4 @@ class PagesController extends Controller
     {
         return view('index');
     }
-
 }
