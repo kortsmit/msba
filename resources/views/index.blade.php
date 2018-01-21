@@ -15,18 +15,18 @@
 
 </head>
 <body class="bg-brand-lightest font-sans font-normal">
-    <div class="flex flex-col">
 
+    <div class="flex flex-col">
         <div class="min-h-screen flex items-center justify-center">
             <div class="flex flex-col justify-around h-full">
                 <div>
                     <h1 class="text-grey-darker text-center font-hairline tracking-wide text-7xl mb-6">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'MSBA') }}
                     </h1>
                 </div>
             </div>
-
         </div>
     </div>
+
 </body>
 </html>
