@@ -58,9 +58,9 @@ class PagesController extends Controller
 ## Part 1 - Configuration
 
 1. Does everyone have GIT installed and Git Bash available? GitHub Desktop?
-    - Please install them if not
-2. Has anyone used GIT or GitHub before this class 
-3. Configuration steps:
+    - [Git Download](https://git-scm.com/downloads)
+    - [GitHub Desktop](https://desktop.github.com/)
+2. Configuration steps:
     - `git config --global user.name 'Tim Kortsmit'`
     - `git config --global user.email 'tim@kortsmit.com'`
     - `git config --global core.editor 'subl -n -w'`
@@ -73,24 +73,24 @@ through and create a repository and work through a few example changes
 and commits. These are some of the most common commands that you will be 
 using if you work with GIT on a day to day basis.
 
-0. At any time, you can run `git --help` to get an exact list of commands available 
+1. At any time, you can run `git --help` to get an exact list of commands available 
     or `git help [command]` to get even more information about a specific command
-1. `code` to switch to my workspace where I keep my GIT repositories
-2. `mkdir github-workshop` to create a new folder
-3. `cd github-workshop` to switch into it
-4. `touch file1.txt file2.txt file3.txt` to quickly create a few files in the folder 
-5. `git init` to initialize the folder as a git repository. This created a hidden `.git` 
+2. `code` to switch to my workspace where I keep my GIT repositories
+3. `mkdir github-workshop` to create a new folder
+4. `cd github-workshop` to switch into it
+5. `touch file1.txt file2.txt file3.txt` to quickly create a few files in the folder 
+6. `git init` to initialize the folder as a git repository. This created a hidden `.git` 
     folder that is used as a form of database to keep track of the GIT repository.
-6. `git status` to view the current state of the repository
-7. `git add .` to add all files
-8. `git commit =m 'Initial commit'` to create our initial commit
-9. `date >> file1.txt` to add some content to one of the files
-10. `git add -p` for an interactive approach to adding files, which will let you 
+7. `git status` to view the current state of the repository
+8. `git add .` to add all files
+9. `git commit =m 'Initial commit'` to create our initial commit
+10. `date >> file1.txt` to add some content to one of the files
+11. `git add -p` for an interactive approach to adding files, which will let you 
     check the changes prior to staging them
-11. `git commit -m 'Add date to file 1'` It is important to always keep your message 
+12. `git commit -m 'Add date to file 1'` It is important to always keep your message 
     short but descriptive.
-12. `git rm file3.txt` to remove the file
-13. `git commit -m 'Removing file 3'
+13. `git rm file3.txt` to remove the file
+14. `git commit -m 'Removing file 3'
 
 ## Part 3 - Looking at Project History
 
@@ -106,7 +106,7 @@ project. Some quick example commands:
 4. `git show` is very similar to `git log` but also outputs the changes that were done. 
     Also, by default, it only shows the most recent commit. Git show is great to view 
     information about one single commit.
-5. `git diff` is incredibly useful to see differences between files. Can pass a specific 
+5. `git diff` is incredibly useful to view differences between files. You can pass a specific 
     commit SHA in order to compare with the current commit. Or, you can pass two specific 
     commits to compare by passing the two SHAs separated by two periods. 
 
@@ -115,8 +115,8 @@ project. Some quick example commands:
 I would have covered this later, after talking about workflow, but I wanted to make sure 
 we pushed up to GitHub as getting your projects to GitHub is the ultimate goal of 
 this workshop. If you have not already pushed your project to GitHub, feel free to
-switch to the project now but you will have to initialize it as a GIT repository and
-create an initial commit on the master branch.
+switch to the project now but, if you have not already done so, you will have to 
+initialize it as a GIT repository and create an initial commit on the master branch.
 
 1. First, we'll go to GitHub and create a new repository
 2. Now, lets create a `readme.md` markdown file in the main project directory: 
@@ -124,9 +124,9 @@ create an initial commit on the master branch.
 3. Now edit it and create a brief description of the project we are working on:
    `subl readme.md` (or another editor of choice)
 4. If you set up GitHub Desktop with your account, you've likely have SSH keys already
-   set up. My preference would be to use SSH and set 
+   set up. Personally, I prefer to use SSH, so I will use
    `git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`. However, if you have
-   not, you can also `git remote set-url origin https://github.com/USERNAME/REPOSITORY.git`.
+   not set this up, you can also `git remote set-url origin https://github.com/USERNAME/REPOSITORY.git`.
    You can verify if this is set correctly by running `git remote -v`
 5. Now, we'll have to set the upstream branch for our local one:
    `git push --set-upstream origin master`. If you are using SSH keys, it'll push the code 
@@ -160,17 +160,17 @@ means to use branches in GIT that branch or separate your work from that trunk.
 7. Another option would have been to run `git checkout -b branch-3`, which will create
    branch-3 and check it out immediately. Most times, you are creating a new branch to 
    do work on, so this is my personal preferred way of creating new branches.
-7. `date >> file2.txt` to make some quite edits
-8. `git add .` and `git commit -m 'Add date to file 2'
-9. `git log --oneline --decorate -a`: you can now see that `branch-1` is ahead of the 
+8. `date >> file2.txt` to make some quite edits
+9. `git add .` and `git commit -m 'Add date to file 2'
+10. `git log --oneline --decorate -a`: you can now see that `branch-1` is ahead of the 
     other branches
-10. Now, say, we are happy with the changes we've made on `branch-1` and we'd like to 
+11. Now, say, we are happy with the changes we've made on `branch-1` and we'd like to 
     bring those changes into the `master` branch: `git checkout master` and then we'll 
     `git merge branch-1`
-11. `git log --oneline --decorate -a`: if we run git log again, you can now see that 
+12. `git log --oneline --decorate -a`: if we run git log again, you can now see that 
     master and branch-1 are now at the same commit, while branch-2 is now behind 
     both branches.
-12. You can check out a previous commit using `git checkout SHA`. You will note that 
+13. You can check out a previous commit using `git checkout SHA`. You will note that 
     you might have a detached HEAD. All this means is that you are on a commit that 
     does not have a branch associated with it. This option is great if you want to 
     look around previous commit. For example, a new bug has popped up and you know 
@@ -199,7 +199,7 @@ means to use branches in GIT that branch or separate your work from that trunk.
    It's a good way to determine if your local copy is out of sync. Keep in mind, 
    even if you do out of sync work, GIT still protects you and basically forces
    you to merge in the remote work before you can push your own work.
-4. To update your local repository, you can `git pull` changes to your local
+5. To update your local repository, you can `git pull` changes to your local
    repository. Effectively, this command runs both `git fetch` and `git merge`
    together.
 
@@ -280,8 +280,6 @@ If time allows, here are a few examples that might be good to demonstrate as wel
 If you are the only one working on a project, this might not happen too frequently.
 However, working as a team you will encounter this sometimes.
 
-1. 
-
 ## Rebase
 
 Rebase can be used to bring a stale branch back up to date. For example, lets imagine
@@ -293,8 +291,6 @@ You can also use GIT rebase to clean up a set of commits. For example, you might
 made multiple commits while doing your work that might be able to be combined into a 
 single commit in order to keep your history clean.
 
-1. 
-
 ## Cherry Pick
 
 GIT cherry-pick allows you to take a specific commit from another branch and add it 
@@ -303,10 +299,8 @@ cherry pick multiple commits without having to pick them one at a time. I should
 that most likely, you will not need this frequently. Personally, I've only used it on a 
 few instances, but it is good to be aware of when the need does arise.
 
-
 1. `git cherry-pick SHA` and pass it the commit's SHA that you are trying to add to 
    your current branch.
-2. 
 
 # Questions
 
