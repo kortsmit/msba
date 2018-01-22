@@ -49,7 +49,7 @@
                 <p>Take a look at <a href="/notes">all of the workshop notes</a>!</p>
 
                 <h1>Questions</h1>
-                <p>Here are a few ways to get reach me:</p>
+                <p>Here are a few ways to reach me:</p>
                 <ol>
                     <li>
                         <a href="mailto:tim@kortsmit.com">tim@kortsmit.com</a>

@@ -304,7 +304,7 @@ few instances, but it is good to be aware of when the need does arise.
 
 # Questions
 
-Here are a few ways to get reach me:
+Here are a few ways to reach me:
 
 1. [tim@kortsmit.com](mailto:tim@kortsmit.com)
 2. [GitHub](https://github.com/kortsmit)
