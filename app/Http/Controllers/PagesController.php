@@ -53,16 +53,6 @@ class PagesController extends Controller
     public function markdown(): string
     {
         return "
-# Introduction
-
-1. Introduction
-2. I attempted to prepare material that should take around two hours to 
-   get through, but of course I did not get to time how long it would 
-   take with a class following along. If we do not make it through everything 
-   or you're not quite able to keep up following along, I'll be making all 
-   of the notes for the workshop available to you. So, don't feel like 
-   you need to follow along the entire time.
-
 # GIT
 
 ## Part 1 - Configuration
@@ -313,16 +303,19 @@ cherry pick multiple commits without having to pick them one at a time. I should
 that most likely, you will not need this frequently. Personally, I've only used it on a 
 few instances, but it is good to be aware of when the need does arise.
 
+
 1. `git cherry-pick SHA` and pass it the commit's SHA that you are trying to add to 
    your current branch.
 2. 
 
-# Questions and Comments
+# Questions
 
-I have business cards up front and my personal contact information will also be 
-available at [https://msba.kortsmit.com](https://msba.kortsmit.com). If anyone needs 
-any help setting up their repositories, has any questions or anything, please do not 
-hesitate to reach out.
+Here are a few ways to get reach me:
+
+1. [tim@kortsmit.com](mailto:tim@kortsmit.com)
+2. [GitHub](https://github.com/kortsmit)
+3. [LinkedIn](https://www.linkedin.com/in/kortsmit/)
+4. [Twitter](https://twitter.com/kortsmit)
         ";
     }
 }
