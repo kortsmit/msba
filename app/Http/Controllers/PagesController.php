@@ -145,10 +145,12 @@ initialize it as a GIT repository and create an initial commit on the master bra
    I'll open it with Sublime Text `subl readme.md`, but feel free to use whatever
    you prefer.
 4. Most of you will want to use HTTPS, which you can set using 
-   `git remote set-url origin https://github.com/USERNAME/REPOSITORY.git`.
+   `git remote add origin https://github.com/USERNAME/REPOSITORY.git`.
     Personally, I prefer to use SSH, so I will use
-   `git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`.
+   `git remote add origin git@github.com:USERNAME/REPOSITORY.git`.
    If you know you've configured SSH keys, feel free to use SSH as well.
+   In case you made a mistake and need to change it, the command is very similar:
+   `git remote set-url origin https://github.com/USERNAME/REPOSITORY.git`
 5. You can verify if this is set correctly by running `git remote -v`
 6. Now, we'll have to set the upstream branch for our local one:
    `git push --set-upstream origin master`. If you are using SSH keys, it'll push the code 
@@ -335,6 +337,14 @@ few instances, but it is good to be aware of when the need does arise.
 
 1. `git cherry-pick SHA` and pass it the commit's SHA that you are trying to add to 
    your current branch.
+
+# Useful Links
+
+Here are a few useful links as you start using both GIT and GitHub more:
+
+1. [Student Developer Pack](https://education.github.com/pack)
+2. [Blog post explaining the GitFlow branching model](http://nvie.com/posts/a-successful-git-branching-model/)
+3. [GitHub Desktop](https://desktop.github.com/)
 
 # Questions
 
