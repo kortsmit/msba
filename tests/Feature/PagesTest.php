@@ -32,7 +32,7 @@ class PagesTest extends TestCase
     public function the_notes_page_renders_markdown_correctly()
     {
         $this->get('/notes')
-            ->assertSee("<h2>Part 1 - Configuration</h2>")
+            ->assertSee('<h2>Part 1 - Configuration</h2>')
             ->assertSee('<code>cd msba</code>');
     }
 }
