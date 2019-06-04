@@ -362,6 +362,7 @@ Here are a few useful links as you start using both GIT and GitHub more:
 1. [Student Developer Pack](https://education.github.com/pack)
 2. [Blog post explaining the GitFlow branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 3. [GitHub Desktop](https://desktop.github.com/)
+4. [Oh shit, git!](https://ohshitgit.com/)
 
 # Questions
 
