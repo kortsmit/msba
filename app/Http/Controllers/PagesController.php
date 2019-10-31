@@ -338,13 +338,31 @@ few instances, but it is good to be aware of when the need does arise.
 1. `git cherry-pick SHA` and pass it the commit's SHA that you are trying to add to 
    your current branch.
 
-# Useful Links
+# Other Useful Items
+
+## Remote Pruning
+
+Once you've been working with a repository for quite some time, you'll sometimes want to 
+clean up your local environment. `git remote prune origin` removes any tracking branches 
+that are not on the remote repository.
+
+## Writing Quality Commit Message
+
+Especially when you're working with others, taking care of your commits and their messages
+becomes very important as your project history grows. Here are some great articles that 
+go in further detail on this:
+
+1. [How to Write a Git Commit Message by Chris Beams](https://chris.beams.io/posts/git-commit/)
+2. [On Commit Messages by Peter Hutterer](http://who-t.blogspot.com/2009/12/on-commit-messages.html)
+
+# Useful Links for Getting Started
 
 Here are a few useful links as you start using both GIT and GitHub more:
 
 1. [Student Developer Pack](https://education.github.com/pack)
 2. [Blog post explaining the GitFlow branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 3. [GitHub Desktop](https://desktop.github.com/)
+4. [Oh shit, git!](https://ohshitgit.com/)
 
 # Questions
 
